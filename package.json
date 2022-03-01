@@ -1,6 +1,6 @@
 {
   "name": "faceit-electron",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Linux Electron app for the FACEIT matchmaking service",
   "main": "index.js",
   "repository": "https://github.com/koyuspace/faceit-electron",

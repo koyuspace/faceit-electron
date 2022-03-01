@@ -22,7 +22,7 @@ function createWindow() {
 
     win.loadURL("https://faceit.com")
 
-    win.webContents.insertCSS(".jobeyF, #onetrust-banner-sdk, header-message-bar {display:none;}")
+    win.webContents.insertCSS(".jobeyF, #onetrust-banner-sdk, header-message-bar {display:none;} .main-header.--message-bar-visible { height: 64px !important; }")
 
     win.setBackgroundColor("#1f1f1f")
 
