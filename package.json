@@ -1,0 +1,47 @@
+{
+  "name": "faceit-electron",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "https://github.com/koyuspace/faceit-electron",
+  "author": "koyu.space",
+  "license": "MIT",
+  "devDependencies": {
+    "electron": "^17.1.0",
+    "electron-builder": "^22.14.13"
+  },
+  "scripts": {
+    "start": "electron .",
+    "pack": "electron-builder --dir",
+    "dist": "rm -rf dist && mkdir -p dist && yarn pack && electron-builder build --publish never -l && rm -f faceit-electron-v1.0.0.tgz"
+  },
+  "build": {
+    "productName": "FACEIT",
+    "appId": "com.Sommerlichter.FACEIT",
+    "asar": true,
+    "asarUnpack": "**\\*.{node,dll}",
+    "files": [
+      "dist",
+      "node_modules",
+      "package.json",
+      "index.js"
+    ],
+    "linux": {
+      "target": [
+        "snap"
+      ],
+      "category": "Office"
+    },
+    "directories": {
+      "buildResources": "assets",
+      "output": "dist"
+    },
+    "extraResources": [
+      "./assets/**"
+    ],
+    "publish": {
+      "provider": "github",
+      "owner": "koyuspace",
+      "repo": "graphmaker"
+    }
+  }
+}
