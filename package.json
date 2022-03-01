@@ -1,6 +1,7 @@
 {
   "name": "faceit-electron",
   "version": "1.0.0",
+  "description": "Linux Electron app for the FACEIT matchmaking service",
   "main": "index.js",
   "repository": "https://github.com/koyuspace/faceit-electron",
   "author": "koyu.space",
@@ -29,7 +30,7 @@
       "target": [
         "snap"
       ],
-      "category": "Office"
+      "category": "Game"
     },
     "directories": {
       "buildResources": "assets",
